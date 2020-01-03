@@ -16,7 +16,6 @@ apply plugin: 'kotlin-kapt'
 def arrow_version = "0.10.4"
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
-    compile 'no.tornado:tornadofx:1'
 
     implementation "io.arrow-kt:arrow-core:$arrow_version"
     implementation "io.arrow-kt:arrow-syntax:$arrow_version"

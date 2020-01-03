@@ -1,6 +1,12 @@
-data class Vertex(val identifier: String)
+interface Vertex {
+    val identifier: String
+    override fun equals(other: Any?): Boolean
+    override fun hashCode(): Int
+}
 
-class Edge(val start: Vertex, val end: Vertex, val weight: Int)
+data class SimpleVertex(override val identifier: String) : Vertex
+
+data class Edge(val start: Vertex, val end: Vertex, val weight: Int)
 
 class Graph(
     val vertices: Set<Vertex>,
