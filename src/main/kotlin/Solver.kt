@@ -26,7 +26,7 @@ fun getGreatestNumberOfPenguins(graph: Graph, timeLimit: Int): Either<String, Ei
                         graph.edges
                     ).right()
                 }.toEither {
-                    "There is no path that starts in M, ends in a door, and its length is lower than or equal than $timeLimit."
+                    "There is no path that starts in M, ends in a door, and its length is lower than or equals to $timeLimit."
                 }
             }
         )
